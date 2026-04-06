@@ -4,11 +4,18 @@ A TypeScript CLI tool for accessing Neo4j from Claude Code. Create, query, and s
 
 ## Why Neo?
 
-Understanding large codebases is time-consuming—Claude Code users typically need to ask: "Where is this functionality?", "What depends on this module?", or "How is this pattern implemented?" Without Neo, Claude must read entire files and directories to answer these questions, consuming significant tokens and requiring broad context. Neo addresses this by building a queryable knowledge graph of your codebase, enabling Claude to understand structure, dependencies, and patterns without reading raw source. By ingesting your code once, Neo lets you ask Claude precise questions—"Find all async error handlers", "What imports this module?", "Show me the class hierarchy"—and get compact, semantically-rich results back within seconds. This saves 80–95% of tokens on typical queries, accelerates analysis of large projects, and lets Claude provide better architectural insights by working with structured data instead of raw code. Neo unlocks faster, cheaper, and more intelligent codebase interaction within Claude Code.
+Neo solves the problem of efficient codebase understanding. Instead of Claude reading entire files and directories (consuming massive token budgets), Neo creates a queryable knowledge graph that lets you ask specific questions like "Find all async error handlers" or "What imports this module?" in seconds. This approach saves 80–95% of tokens on typical queries and enables better architectural insights.
 
 ## Why Neo4j?
 
-Codebase analysis requires understanding relationships: files import modules, classes contain methods, functions call other functions. Representing codebases as graphs—where nodes are code entities and edges are relationships—maps naturally to how code actually works. Neo4j is a proven, mature graph database purpose-built for traversing relationships efficiently. Neo4j solves the relationship problem: you can ask complex questions like "find all files that transitively import a module" or "what's the deepest call chain in this service?" in milliseconds, whereas flattening this into tables or documents would require slow joins or sequential traversals. The advantages are immediate: Neo4j's Cypher query language is expressive yet readable, its vector search capabilities enable semantic code discovery, and its performance remains constant as codebases grow. Users benefit from sub-millisecond query results, the ability to ask complex structural questions without hand-written traversal code, and a graph model that doesn't require schema redesign as your analysis needs evolve. For Claude Code, Neo4j ensures that codebase insights are fast, precise, and rich enough to inform real refactoring and architecture decisions.
+Neo4j is ideal because code is fundamentally relational—files import modules, classes contain methods, functions call each other. A graph database naturally represents these relationships. Neo4j offers:
+- **Speed**: Sub-millisecond queries for complex traversals (vs. slow SQL joins)
+- **Expressiveness**: Cypher language is powerful yet readable
+- **Scalability**: Performance remains constant as codebases grow
+- **Flexibility**: Graph model doesn't require schema redesign as analysis needs evolve
+- **Intelligence**: Vector search enables semantic code discovery
+
+In short: **Neo eliminates token waste** through focused querying, and **Neo4j** is the right technology because code is a graph.
 
 ## Installation
 
