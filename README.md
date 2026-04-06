@@ -23,7 +23,8 @@ In short: **Neo eliminates token waste** through focused querying, and **Neo4j**
 ## Installation
 
 ```bash
-cd /home/linux/hexguild/golems/neo
+git clone https://github.com/FormFlow-mobi/neo.git
+cd neo
 npm install
 npm run build
 npm link
