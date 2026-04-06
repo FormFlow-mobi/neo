@@ -2,12 +2,12 @@
 
 A TypeScript CLI tool for accessing Neo4j from Claude Code. Create, query, and search knowledge graphs of codebases and external data.
 
-**Ingest your source code with neo** Save up to 95% token usage.
+**Ingest your source code with neo** Save up to 50% token usage.
 > neo ingest ./src --lang ts --clear # Clear database before ingestion
 
 ## Why Neo?
 
-Neo solves the problem of efficient codebase understanding. Instead of Claude reading entire files and directories (consuming massive token budgets), Neo creates a queryable knowledge graph that lets you ask specific questions like "Find all async error handlers" or "What imports this module?" in seconds. This approach saves 80–95% of tokens on typical queries and enables better architectural insights.
+Neo solves the problem of efficient codebase understanding. Instead of Claude reading entire files and directories (consuming massive token budgets), Neo creates a queryable knowledge graph that lets you ask specific questions like "Find all async error handlers" or "What imports this module?" in seconds. This approach saves 50% of tokens on typical queries and enables better architectural insights.
 
 ## Why Neo4j?
 
