@@ -2,7 +2,7 @@
 
 A TypeScript CLI tool for accessing Neo4j from Claude Code. Create, query, and search knowledge graphs of codebases and external data.
 
-**Ingest your code wwith neo**
+**Ingest your source code with neo**
 > neo ingest ./src --lang ts --clear # Clear database before ingestion
 
 ## Why Neo?
