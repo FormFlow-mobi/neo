@@ -4,7 +4,7 @@
 
 A complete TypeScript CLI tool called `neo` that provides a command-line interface to Neo4j knowledge graphs, optimized for use with Claude Code.
 
-**Location:** `/home/linux/hexguild/golems/neo`
+**Location:** `/neo` - Installation folder
 
 **Status:** ✅ Fully functional and globally installed via `npm link`
 
