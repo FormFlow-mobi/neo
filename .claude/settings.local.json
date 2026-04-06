@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(neo config:*)",
+      "Bash(neo query:*)",
+      "Bash(neo ingest:*)",
+      "Bash(neo --version)",
+      "Bash(neo --help)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
